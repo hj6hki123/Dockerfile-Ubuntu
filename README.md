@@ -14,7 +14,7 @@
 
    
 
-3. 在專案中建立 Github Action Workflow 檔案，例如 `.github/workflows/publish.yml`。在該檔案中，使用 `docker/login-action` 來登入 Docker Hub 帳號，並使用 `docker/build-push-action` 來建置並上傳 Docker Image。在 `on` 段落中，可以設置觸發事件，例如當你新增一個 Git Tag 時，會觸發 Action，並上傳 Image 至 Docker Hub。
+3. 在專案中建立 Github Action Workflow 檔案，例如 `.github/workflows/publish.yml`。在該檔案中，使用 `docker/login-action` 來登入 Docker Hub 帳號，並使用 `docker/build-push-action` 來建置並上傳 Docker Image。在 `on` 段落中，可以設置觸發事件，在本範例中當你 Release 後，會觸發 Action，並上傳 Image 至 Docker Hub。
 
    
 
